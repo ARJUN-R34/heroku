@@ -1,0 +1,22 @@
+{% extends 'layouts.html' %}
+
+{% block myPage %}
+
+<div class="container">
+  <br><h1>Employee Page</h1><br>
+</div>
+
+{% for employee in myEmployee %}
+
+<div class="container">
+  <ul class="list-group">
+    <li class="list-group-item"><strong>ID: </strong>{{employee.id}}</li>
+    <li class="list-group-item"><strong>NAME: </strong>{{employee.name}}</li>
+    <li class="list-group-item"><strong>AGE: </strong>{{employee.age}}</li>
+    <li class="list-group-item"><strong>SALARY: </strong>{{employee.salary}}</li><br><br>
+  </ul>
+</div>
+
+{% endfor %}
+
+{% endblock %}
